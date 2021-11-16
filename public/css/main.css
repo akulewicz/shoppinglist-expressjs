@@ -1,0 +1,137 @@
+@import './normalize.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('./img/background.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.562);
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.heading-icon-box {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.heading-icon-box__icon {
+    font-size: 50px;
+    border: 3px solid #ffa500;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #ffa500;
+}
+
+.heading-text-box {
+    display: inline-block;
+    font-family: 'Pattaya', sans-serif;
+    color: orange;
+    letter-spacing: 3px;
+}
+
+.form {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.form__input {
+    background: rgba(8, 8, 0, 0.733);
+    color: white;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form__button {
+    position: absolute;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    border: none;
+    border-left: 1px solid grey;
+    background: rgb(0, 0, 0);
+    border-radius: 0 8px 8px 0;
+    color: rgb(234, 235, 220)
+}
+
+.products-list {
+    max-width: 1140px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.products-list__item {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(234, 235, 220, 0.89);
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+    border-radius: 8px;
+}
+
+.products-list__delete-icon {
+    font-size: 18px;
+    color: rgb(107, 52, 1);
+}
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.692);
+    height: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-container__img {
+    height: 35px;
+    width: auto;
+}
