@@ -2,12 +2,27 @@ const Product = require('../db/models/product');
 
 class ProductController {
 
-    showList(req, res) {
-        res.render('pages/home')
+    async showList(req, res) {
+        const products = await Product.find({}) 
+        res.render('pages/home', {
+            products
+        })
     }
 
-    addProduct(req, res) {
-        console.log(req.body)
+    async addProduct(req, res) {
+        
+        const product = new Product({
+            name: req.body.name
+        })
+
+        try {
+            await product.save();
+            res.redirect('/');
+        } catch(e) {
+
+        }
+
+        
     }
 }
 

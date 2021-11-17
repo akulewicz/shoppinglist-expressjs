@@ -8,6 +8,12 @@
 
     </form>
     <ul class="products-list products-list--js">
+        <% if (products) { 
+            for(let product of products) { %>
+                <li class="products-list__item" data-product-id="0"><span class="product-list__item-text"><%= product.name %></span><i class="far fa-trash-alt products-list__delete-icon"></i></li>
+        <% }} %>
+                
+
 
     </ul>
 </div>
