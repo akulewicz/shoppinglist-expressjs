@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const ejsLayouts = require('express-ejs-layouts');
 
+require('./db/mongoose');
+
 app.set('views', __dirname + '/../views');
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
