@@ -10,10 +10,11 @@ app.use(ejsLayouts);
 app.set('layout', 'layouts/main');
 app.use(express.static('public'));
 
+app.use(express.urlencoded({
+    extended: true
+  }))
 
-app.get('/', (req, res) => {
-    res.render('pages/home');
-})
+app.use(require('./routes/web'));
 
 
 
