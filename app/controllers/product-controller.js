@@ -10,7 +10,7 @@ class ProductController {
     }
 
     async addProduct(req, res) {
-        
+        const products = await Product.find({}) 
         const product = new Product({
             name: req.body.name
         })
@@ -19,7 +19,10 @@ class ProductController {
             await product.save();
             res.redirect('/');
         } catch(e) {
-
+            res.render('pages/home', {
+                products,
+                errors: e.errors
+            })
         }
 
         

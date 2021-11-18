@@ -90,9 +90,12 @@ body {
     color: rgb(234, 235, 220)
 }
 
-.products-list {
+.products {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.products-list {
     list-style: none;
     padding: 10px;
     padding-bottom: 50px;
@@ -135,3 +138,4 @@ body {
     height: 35px;
     width: auto;
 }
+

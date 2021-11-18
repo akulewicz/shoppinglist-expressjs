@@ -14,6 +14,8 @@ app.use(express.urlencoded({
     extended: true
   }))
 
+app.use(require('./midellware/viev-variables-middleware'));
+
 app.use(require('./routes/web'));
 
 

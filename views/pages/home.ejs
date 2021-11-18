@@ -1,11 +1,12 @@
 <div class="products">
+    
+    
     <form class="form form--js" method="post" action="/list/product/add">
         <p>
             <input class="form__input form__input--js" type="text" name="name" id="name"
-                aria-label="Wprowadź nazwę produktu">
+                aria-label="Wprowadź nazwę produktu" placeholder="<%= errors?.name ? errors.name.message : '' %>">
             <input class="form__button" type="submit" value="+" aria-label="Dodaj produkt">
         </p>
-
     </form>
     <ul class="products-list products-list--js">
         <% if (products) { 
