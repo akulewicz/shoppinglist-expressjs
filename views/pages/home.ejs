@@ -14,8 +14,12 @@
                 <li class="products-list__item" data-product-id="0"><span class="product-list__item-text"><%= product.name %></span><i class="far fa-trash-alt products-list__delete-icon"></i></li>
         <% }} %>
                 
-
-
     </ul>
 </div>
 
+<script>
+    const form = document.querySelector('.form');
+    document.addEventListener('DOMContentLoaded', () => {
+        form.name.focus();
+    })
+</script>
